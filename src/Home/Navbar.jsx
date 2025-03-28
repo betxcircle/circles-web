@@ -169,7 +169,9 @@ export default function Navbar() {
       {/* Mobile View: Search Bar & Category Dropdown */}
       {menuOpen && (
         <div className="md:hidden p-2 flex flex-col gap-2">
+         <Link to="/searchpage">
           <input type="text" placeholder="Search..." className="w-full p-2 border rounded" />
+         </Link>
           
           {/* Mobile Category Dropdown */}
           <div className="relative">
