@@ -1,5 +1,6 @@
 import { useState,useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const categories = [
   {id: 1, name: "Electronics", image: "./adBanner.png" },
@@ -41,11 +42,13 @@ const Hero = () => {
         
         {/* Left: Auto-Sliding Big Banner */}
         <div className="relative overflow-hidden rounded-lg md:col-span-2 lg:col-span-2 w-full h-full">
-          <img
+      <Link to="/searchpage">
+            <img
             src={categories[slideIndex].image}
             alt={categories[slideIndex].name}
             className="w-full h-full object-cover transition-transform duration-700"
           />
+      </Link>
           {/* Left Button */}
           <button
             onClick={() => handleClick("left")}
@@ -68,7 +71,9 @@ const Hero = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6">
           {rightCategories.map((cat) => (
             <div key={cat.id} className="relative group cursor-pointer overflow-hidden rounded-lg">
-              <img src={cat.image} alt={cat.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+           <Link to="/searchpage">
+                <img src={cat.image} alt={cat.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+           </Link>
               <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
                 <h2 className="text-white text-lg font-semibold">{cat.name}</h2>
               </div>
