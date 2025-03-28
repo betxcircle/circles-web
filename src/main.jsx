@@ -7,7 +7,7 @@ import store from './redux/store.js'
 import { Provider } from 'react-redux'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
+  <BrowserRouter basename='/circles-web/'>
    <Provider store={store}>
     <App />
    </Provider>
