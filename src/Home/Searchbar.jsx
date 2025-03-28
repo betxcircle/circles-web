@@ -57,9 +57,9 @@ const SearchPage = () => {
               />
               <h2 className="text-lg font-semibold mt-2">{product.title}</h2>
               <p className="text-gray-600">{product.description}</p>
-              <p className="text-xl font-bold text-green-500">{product.price}</p>
+              <p className="text-xl font-bold text-green-500">₦{product.price}</p>
               {product.slashedPrice && (
-                <p className="text-red-500 line-through">{product.slashedPrice}</p>
+                <p className="text-red-500 line-through">₦{product.slashedPrice}</p>
               )}
               <button
                onClick={() => {
