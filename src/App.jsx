@@ -22,13 +22,12 @@ import CategoryPage from './Home/CategoryPage';
 import SearchPage from './Home/Searchbar';
 import OrderConfirmation from './Home/OrderConfirmation';
 import WishList from './Home/WishList';
-import { WishlistProvider } from "./Home/WishlistProvider";
+// import { WishlistProvider } from "./Home/WishlistProvider";
 
 function App() {
   return (
         <div>
           <CartProvider>
-        <WishListProvider>
             <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/login' element={<Login/>}/>
@@ -45,7 +44,6 @@ function App() {
           <Route path='/checkout' element={<Checkout/>}/>
           <Route path="/order-confirmation" element={<OrderConfirmation />} />
         </Routes>
-        </WishListProvider>
           </CartProvider>
         </div>
   );
