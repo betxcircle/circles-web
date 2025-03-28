@@ -123,10 +123,18 @@ export default function Navbar() {
             </button>
             {dropdownOpen && (
               <ul className="absolute left-0 top-full mt-2 w-48 bg-white border rounded-md shadow-lg z-50">
-                <li className="p-3 hover:bg-gray-100 cursor-pointer">Electronics</li>
-                <li className="p-3 hover:bg-gray-100 cursor-pointer">Clothing</li>
-                <li className="p-3 hover:bg-gray-100 cursor-pointer">Home & Kitchen</li>
-                <li className="p-3 hover:bg-gray-100 cursor-pointer">Beauty & Health</li>
+              <Link to="/searchpage">
+                    <li className="p-3 hover:bg-gray-100 cursor-pointer">Electronics</li>
+              </Link>
+               <Link to="/searchpage">
+                    <li className="p-3 hover:bg-gray-100 cursor-pointer">Televisions</li>
+               </Link>
+               <Link to="/phones">
+                    <li className="p-3 hover:bg-gray-100 cursor-pointer">Phones</li>
+               </Link>
+               <Link to="/laptops">
+                    <li className="p-3 hover:bg-gray-100 cursor-pointer">Laptops</li>
+               </Link>
               </ul>
             )}
           </div>
