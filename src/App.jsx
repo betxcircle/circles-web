@@ -22,7 +22,7 @@ import CategoryPage from './Home/CategoryPage';
 import SearchPage from './Home/Searchbar';
 import OrderConfirmation from './Home/OrderConfirmation';
 import WishList from './Home/WishList';
-import { WishlistProvider } from "./Home/WishlistProvider";
+import { WishlistProvider } from "./Home/WishlistContext";
 
 function App() {
   return (
