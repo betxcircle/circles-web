@@ -112,7 +112,8 @@ margin-top:10px;
     <Container>
 
         <Left>
-           <Logo><img src={logo} className='logo' alt='log'/></Logo>
+          <Logo>Odincirclex</Logo>
+
            <Desc>
                Odincirclex is a one stop shop for all your fashion and lifestyle needs. Being India's largest e-commerce store for fashion and lifestyle products, Myntra aims at providing a hassle free and enjoyable shopping experience to shoppers across the country with the widest range of brands and products on its portal.
            </Desc>
@@ -132,7 +133,7 @@ margin-top:10px;
                           <TwitterIcon/>
                   </SocialIcon>
                   </Link>
-                  <Link to ="https://www.linkedin.com/in/akash-gupta-9b7988200/">
+                  <Link to ="/">
                   <SocialIcon  color="0072b1">
                           <LinkedInIcon/>
                   </SocialIcon>
@@ -141,25 +142,14 @@ margin-top:10px;
         </Left>
 
         <Center>
-            <Title>Useful Links</Title>
-            <List>
-               <ListItem>Home</ListItem>
-               <ListItem>Cart</ListItem>
-               <ListItem>Man Fashion</ListItem>
-               <ListItem>Women Fashion</ListItem>
-               <ListItem>Accessories</ListItem>
-               <ListItem>My Account</ListItem>
-               <ListItem>Order Tracking</ListItem>
-               <ListItem>Wishlist</ListItem>
-               <ListItem>Terms</ListItem>
-            </List>
+
         </Center>
 
         <Right>
             <Title>Contact</Title>
-            <ContactItem><FmdGoodIcon style={{marginRight:"10px"}}/>34 ,Herbert Macaulay way 9876</ContactItem>
-            <ContactItem><LocalPhoneIcon style={{marginRight:"10px"}}/> 10-23456</ContactItem>
-            <ContactItem><EmailIcon style={{marginRight:"10px"}}/>contact@finddeal.dev</ContactItem>
+            <ContactItem><FmdGoodIcon style={{marginRight:"10px"}}/>12, Eyo street, Palmgroove, Lagos.</ContactItem>
+            <ContactItem><LocalPhoneIcon style={{marginRight:"10px"}}/> 09052792796</ContactItem>
+            <ContactItem><EmailIcon style={{marginRight:"10px"}}/>odincirclex@gmail.com</ContactItem>
             <Payment src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbMZ8lkI4aXUh3_VZM3kYixFoEA_V0-Ak511VOO0NucAQCj9Bbh2O-PeiYCXS7tecgxA&usqp=CAU"/>
         </Right>
 
