@@ -150,9 +150,15 @@ export default function Navbar() {
         {/* Right: Icons */}
         <div className="flex items-center gap-4">
       {/* Wishlist */}
-      <Link to="/wishlist">
-        <FiHeart className="text-3xl cursor-pointer" />
-      </Link>
+            <Link
+  to="#"
+  onClick={(e) => {
+    e.preventDefault();
+    alert("You have to be a registered user before you can access this feature.");
+  }}
+>
+ <FiHeart className="text-3xl cursor-pointer" />
+</Link>
 
       {/* Cart */}
       
