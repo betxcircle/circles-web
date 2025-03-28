@@ -155,8 +155,8 @@ const Cart = () => {
              Proceed to Checkout
           </Link>
           </button>
-
             </div>
+              
             <div className="flex flex-col md:flex-row justify-between items-center mt-6 gap-4">
               {/* <p className="text-xl font-semibold">Subtotal: ${totalPrice.toFixed(2)}</p> */}
               <button className="bg-black text-white px-6 py-3 rounded-lg hover:bg-black-700 transition w-full md:w-auto">
