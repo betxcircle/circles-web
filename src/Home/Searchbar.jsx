@@ -62,7 +62,10 @@ const SearchPage = () => {
                 <p className="text-red-500 line-through">{product.slashedPrice}</p>
               )}
               <button
-                onClick={() => addToCart(product)}
+               onClick={() => {
+                  addToCart(product);
+                  navigate("/cart"); // Navigate to Cart Page after adding
+                }}
                 className="mt-2 bg-blue-500 text-white py-1 px-4 rounded"
               >
                 Add to Cart
