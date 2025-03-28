@@ -115,7 +115,7 @@ margin-top:10px;
           <Logo>Odincirclex</Logo>
 
            <Desc>
-               Odincirclex is a one stop shop for all your fashion and lifestyle needs. Being India's largest e-commerce store for fashion and lifestyle products, Myntra aims at providing a hassle free and enjoyable shopping experience to shoppers across the country with the widest range of brands and products on its portal.
+              Odincirclex is a trusted provider of cutting-edge technology solutions, specializing in high-quality hardware, software, and peripherals. We cater to businesses and individuals, offering expert supply, installation, and maintenance services to ensure seamless performance and reliability. Whether you need top-tier computer components, enterprise solutions, or everyday tech essentials, Odincirclex delivers innovation and efficiency tailored to your needs.
            </Desc>
            <SocialContainer>
                    <Link to ="https://www.facebook.com/king.akash.108/">
