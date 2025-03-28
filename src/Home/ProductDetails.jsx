@@ -8,6 +8,7 @@ import productts from "../assets/Data/limitedproducts";
 import tvproducts from "../assets/Data/tvproducts";
 import Navbar from "./Navbar";
 import newArrivalsproducts from "../assets/Data/newArrivalsproducts";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 // Sample Product Data (Replace with API data)
 // const products = [
@@ -74,7 +75,11 @@ const ProductDetails = () => {
         <div className="flex gap-4 mt-4">
           <button
             className="bg-blue-600 text-white px-6 py-2 rounded-lg flex items-center gap-2 hover:bg-blue-700 transition"
-            onClick={() => addToCart(product)}
+{/*             onClick={() => addToCart(product)} */}
+          onClick={() => {
+                  addToCart(product);
+                  navigate("/cart"); // Navigate to Cart Page after adding
+                }}
           >
             <FaShoppingCart /> Add to Cart
           </button>
