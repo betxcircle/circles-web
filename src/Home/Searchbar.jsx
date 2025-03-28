@@ -6,6 +6,7 @@ import limitedproducts from "../assets/Data/limitedproducts";
 import newArrivalsproducts from "../assets/Data/newArrivalsproducts";
 import tvproducts from "../assets/Data/tvproducts";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 import { useCart } from "./CartContext";
 
 const SearchPage = () => {
@@ -76,6 +77,7 @@ const SearchPage = () => {
           <p className="text-center col-span-2 md:col-span-4">No products found.</p>
         )}
       </div>
+      <Footer/>
     </div>
   );
 };
