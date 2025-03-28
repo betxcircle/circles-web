@@ -168,9 +168,17 @@ export default function Navbar() {
           )}
         </Link>
       {/* Register/Login */}
-      <Link to="/auth">
-        <FiUser className="text-3xl cursor-pointer" />
-      </Link>
+<Link
+  to="#"
+  onClick={(e) => {
+    e.preventDefault();
+    alert("In construction, you can still place an order.");
+  }}
+>
+  <FiUser className="text-3xl cursor-pointer" />
+</Link>
+
+
     </div>
       </div>
 
