@@ -24,7 +24,7 @@
 //                     <div className="col-md-5 col-lg-4 order-md-last">
 //                         <h4 className="d-flex justify-content-between align-items-center mb-3">
 //                             <span className="text-primary">Your cart</span>
-//                             <span className="badge bg-primary rounded-pill">{state.length}</span>
+//                             <span className="badge bg-primary text-white rounded-pill">{state.length}</span>
 //                         </h4>
 //                         <ul className="list-group mb-3">
 //                             {state.map(itemList)}
@@ -423,7 +423,7 @@ const Checkout = () => {
                         {/* Account Details (Text, Not Inputs) */}
                         {paymentMethod === 'MoniePoint' && (
                             <div className="mt-3">
-                                <p><strong>Account Name:</strong> MoniePoint Payment</p>
+                                <p><strong>Account Name:</strong> ODINCIRCLEX LIMITED</p>
                                 <p><strong>Account Number:</strong> 9052792796</p>
                                 
                                 {/* Delivery Method */}
@@ -449,9 +449,12 @@ const Checkout = () => {
 
                         <hr className="my-4" />
 
-                        <button className="w-100 btn btn-primary btn-lg" type="submit" onClick={handleCheckout}>
-                         Continue to checkout
-                        </button>
+                   {/* Conditionally Display the Button */}
+      {paymentMethod === "MoniePoint" && (
+        <button className="w-100 btn btn-primary btn-lg" type="submit" onClick={handleCheckout}>
+          Place Order
+        </button>
+      )}
     
                     </form>
                 </div>
