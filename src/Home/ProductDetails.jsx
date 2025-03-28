@@ -28,6 +28,9 @@ import { useNavigate } from "react-router-dom"; // Import useNavigate
 // ];
 
 const ProductDetails = () => {
+
+   const navigate = useNavigate();
+  
   const { productId } = useParams();
   const { addToCart } = useCart();
 
