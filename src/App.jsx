@@ -21,6 +21,7 @@ import { CartProvider } from './Home/CartContext';
 import CategoryPage from './Home/CategoryPage';
 import SearchPage from './Home/Searchbar';
 import OrderConfirmation from './Home/OrderConfirmation';
+import WishList from './Home/WishList';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route  path='/category/:category' element={<CategoryPage/>}/>
           <Route path="/product/:productId" element={<ProductDetails />}/>
           <Route path='/cart' element={<Cart/>}/>
+            <Route  path="/wishlist"  element={<WishList/>} />
           <Route path='/products' element={<Product/>}/>
           <Route  path='/searchpage'   element={<SearchPage/>}/>
           <Route path='/createproducts' element={<CreateProduct/>}/>
